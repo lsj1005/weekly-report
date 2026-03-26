@@ -13,10 +13,9 @@
         
         body {
             font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
-            background: linear-gradient(135deg, #8B0000 0%, #C41E3A 50%, #8B0000 100%);
-            color: #fff;
+            background: #f5f5f5;
+            color: #333;
             line-height: 1.8;
-            overflow-x: hidden;
         }
         
         .container {
@@ -27,192 +26,181 @@
         
         header {
             text-align: center;
-            padding: 60px 0 40px;
-            border-bottom: 3px solid rgba(255,255,255,0.3);
-            margin-bottom: 50px;
-            animation: fadeInDown 1s ease;
+            padding: 50px 0 30px;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 40px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            letter-spacing: 2px;
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            font-weight: 600;
         }
         
         .subtitle {
-            font-size: 1.3em;
-            opacity: 0.9;
-            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
         }
         
         .date {
-            font-size: 1.1em;
-            opacity: 0.8;
-            background: rgba(255,255,255,0.1);
-            padding: 10px 30px;
-            border-radius: 25px;
+            font-size: 1em;
+            color: #888;
+            background: #f0f0f0;
+            padding: 8px 20px;
+            border-radius: 20px;
             display: inline-block;
         }
         
-        .section {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 40px;
-            border: 1px solid rgba(255,255,255,0.2);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            animation: fadeInUp 1s ease;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 48px rgba(0,0,0,0.4);
-        }
-        
-        h2 {
-            font-size: 1.8em;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid rgba(255,255,255,0.3);
-            color: #FFD700;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-        
-        h3 {
-            font-size: 1.3em;
-            margin: 25px 0 15px;
-            color: #FFA500;
-        }
-        
-        .item {
-            background: rgba(255,255,255,0.05);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border-left: 4px solid #FFD700;
-            transition: all 0.3s ease;
-        }
-        
-        .item:hover {
-            background: rgba(255,255,255,0.1);
-            border-left-width: 6px;
-        }
-        
-        .item-title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 12px;
-            color: #FFD700;
-        }
-        
-        .item-content {
-            font-size: 1em;
-            opacity: 0.95;
-            text-align: justify;
-        }
-        
-        .source {
-            font-size: 0.9em;
-            opacity: 0.7;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        
         .toc {
-            background: rgba(0,0,0,0.2);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         
         .toc h2 {
-            margin-bottom: 20px;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
             border-bottom: none;
         }
         
         .toc ul {
             list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
         }
         
         .toc li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 0;
         }
         
         .toc a {
-            color: #fff;
+            color: #0066cc;
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-size: 0.95em;
         }
         
         .toc a:hover {
-            color: #FFD700;
+            text-decoration: underline;
+        }
+        
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #f0f0f0;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 1.1em;
+            margin: 20px 0 12px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .item {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 3px solid #0066cc;
+        }
+        
+        .item-title {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        
+        .item-content {
+            font-size: 0.95em;
+            color: #444;
+            text-align: justify;
+            line-height: 1.9;
+        }
+        
+        .source {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 12px;
+            font-style: italic;
+        }
+        
+        .media-placeholder {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            border-radius: 6px;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px 0;
+            color: #888;
+        }
+        
+        .media-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        
+        .media-placeholder video {
+            max-width: 100%;
+            border-radius: 6px;
+            margin: 10px 0;
         }
         
         footer {
             text-align: center;
-            padding: 40px 0;
-            border-top: 3px solid rgba(255,255,255,0.3);
-            margin-top: 50px;
-            opacity: 0.8;
+            padding: 30px 0;
+            border-top: 2px solid #e0e0e0;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+            background: #fff;
+            border-radius: 8px;
         }
         
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        a {
+            color: #0066cc;
+            text-decoration: none;
         }
         
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        a:hover {
+            text-decoration: underline;
         }
         
-        /* 滚动条美化 */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: rgba(0,0,0,0.2);
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.3);
-            border-radius: 6px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(255,255,255,0.5);
-        }
-        
-        /* 响应式 */
         @media (max-width: 768px) {
-            h1 { font-size: 1.8em; }
-            .subtitle { font-size: 1.1em; }
-            .section { padding: 25px; }
-            h2 { font-size: 1.5em; }
+            h1 { font-size: 1.5em; }
+            .subtitle { font-size: 1em; }
+            .section { padding: 20px; }
+            h2 { font-size: 1.3em; }
+            .toc ul { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📺 广播电视和网络视听科技<br>发展与创新应用周报</h1>
+            <h1>广播电视和网络视听科技<br>发展与创新应用周报</h1>
             <div class="subtitle">2026 年第 2 期（总第 2 期）</div>
             <div class="date">📅 2026 年 3 月 9 日 — 3 月 15 日</div>
         </header>
@@ -236,12 +224,15 @@
                     可灵 3.0 系列模型正式全球全量开放，该模型基于"All-in-One"全模态理念，将文本、图像、音频和视频的理解、生成与编辑整合至统一工作流。核心突破包括支持最长 15 秒视频生成、智能分镜叙事、革命性的动作控制 3.0，确保复杂动作下人物面部高度一致，以及多语言精准口型匹配。标志着 AI 视频技术从"生成工具"正式迈入"智能创意协作伙伴"阶段。
                 </div>
                 <div class="source">📌 信息来源：快手</div>
+                <div class="media-placeholder">
+                    📷 此处可插入可灵 3.0 界面截图或演示视频
+                </div>
             </div>
             
             <div class="item">
                 <div class="item-title">2. OpenClaw 热度持续攀升但需强化安全风险防控</div>
                 <div class="item-content">
-                    近期，开源 AI 智能体 OpenClaw 密集发布新版本，新增上下文引擎，完成对 GPT-5.4 与 Gemini 3.1 等模式的适配，GitHub 星标超 28 万。工信部网络安全威胁和漏洞信息共享平台监测提示，OpenClaw 部分实例在默认或不当配置情况下存在较高安全风险，易遭受网络攻击、引发信息泄漏等问题。
+                    近期，开源 AI 智能体 OpenClaw 密集发布新版本，新增上下文引擎，完成对 GPT-5.4 与 Gemini 3.1 等模式的适配，GitHub 星标超 28 万。工信部网络安全威胁和漏洞信息共享平台监测提示，OpenClaw 部分实例在默认或不当配置情况下存在较高安全风险。
                 </div>
                 <div class="source">📌 信息来源：工业和信息化部网络安全威胁和漏洞信息共享平台</div>
             </div>
@@ -249,9 +240,12 @@
             <div class="item">
                 <div class="item-title">3. 阿里千问 AI 眼镜重构媒体行业拍摄与呈现新形态</div>
                 <div class="item-content">
-                    阿里千问 AI 眼镜近期在国内开启发售，搭载千问大模型，提供实时翻译、AR 导航、语音指令服务等 AI 能力。采用 Super RAW 暗光增强技术提升拍摄画质，首创热插拔换电设计实现约 9 小时续航，配备 64GB 大容量存储，支持第一视角拍摄、3K 视频录制等功能，助力媒体行业实现轻量化、智能化转型。
+                    阿里千问 AI 眼镜近期在国内开启发售，搭载千问大模型，提供实时翻译、AR 导航、语音指令服务等 AI 能力。采用 Super RAW 暗光增强技术提升拍摄画质，首创热插拔换电设计实现约 9 小时续航，配备 64GB 大容量存储，支持第一视角拍摄、3K 视频录制等功能。
                 </div>
                 <div class="source">📌 信息来源：腾讯新闻</div>
+                <div class="media-placeholder">
+                    📷 此处可插入 AI 眼镜产品图或佩戴演示视频
+                </div>
             </div>
             
             <div class="item">
@@ -268,6 +262,9 @@
                     ESPN、迪士尼与国家冰球联盟（NHL）将于 4 月 5 日合作推出《头脑特工队》主题的 NHL 赛事"实时动画替代转播"（Alt-Cast）。项目依托 NHL EDGE 球员与冰球位置数据、索尼鹰眼光学追踪技术，通过索尼 Beyond Sports 虚拟重建平台，实时生成动作流畅、物理细节真实的虚拟球员动画。
                 </div>
                 <div class="source">📌 信息来源：迪士尼 + 官网</div>
+                <div class="media-placeholder">
+                    🎬 此处可插入实时动画转播演示视频
+                </div>
             </div>
         </section>
         
@@ -280,14 +277,20 @@
                     2026 年全国两会报道期间，主流媒体以人工智能技术推动内容生产创新。央视频在《"冠"察两会》中推出具身智能 AI 观察员"智小谱"，与评论员组成"人机搭档"开展访谈与热点解读。江苏广电总台深度运用人形机器人"智媒天团"、AI 数据可视化、AIGC 全链路创作、AI 数字人主播、XR 虚拟制作等技术，打造沉浸式、互动式报道体验。
                 </div>
                 <div class="source">📌 信息来源：星视相、XR 控</div>
+                <div class="media-placeholder">
+                    📷 此处可插入 AI 观察员"智小谱"或江苏广电机器人记者图片/视频
+                </div>
             </div>
             
             <div class="item">
                 <div class="item-title">2. 上影集团以 AIGC 技术赋能短剧制作提质增效</div>
                 <div class="item-content">
-                    上海电影（集团）有限公司聚焦 AIGC 技术与短剧创作深度融合，构建"AIGC 全流程辅助 + 人工创意优化"体系。依托 1000 平方米绿幕虚拟拍摄棚，在《伐神录》《六异—神符师》等项目中实现实时渲染、数字场景构建与虚拟视觉制作的一体化落地。推动经典 IP 与原创 IP 创新表达，如《51 号兵站》改编作品《风生水起》、动画系列《墩墩与大鹅》等。
+                    上海电影（集团）有限公司聚焦 AIGC 技术与短剧创作深度融合，构建"AIGC 全流程辅助 + 人工创意优化"体系。依托 1000 平方米绿幕虚拟拍摄棚，在《伐神录》《六异—神符师》等项目中实现实时渲染、数字场景构建与虚拟视觉制作的一体化落地。
                 </div>
                 <div class="source">📌 信息来源：文汇报</div>
+                <div class="media-placeholder">
+                    🎬 此处可插入 AIGC 短剧制作花絮或虚拟拍摄现场视频
+                </div>
             </div>
         </section>
         
@@ -297,17 +300,23 @@
             <div class="item">
                 <div class="item-title">1. 创新技术助力我台全国两会报道提质增效</div>
                 <div class="item-content">
-                    全国两会期间，我台紧扣新闻报道需求，充分发挥 AI 技术与自建算力平台优势。上线"记者跑两会"H5 智能助手，依托 Deepseek V3.2 大模型能力，搭建两会专属知识库，记者通过手机即可随时问答、一键解读。推出"AI 画布"功能，实现一站式视觉创作，将创意文字快速转化为视频脚本、分镜视频等，高效完成"北京生态图鉴"两会主题短片的制作。
+                    全国两会期间，我台紧扣新闻报道需求，充分发挥 AI 技术与自建算力平台优势。上线"记者跑两会"H5 智能助手，依托 Deepseek V3.2 大模型能力，搭建两会专属知识库，记者通过手机即可随时问答、一键解读。推出"AI 画布"功能，实现一站式视觉创作，将创意文字快速转化为视频脚本、分镜视频等。
                 </div>
                 <div class="source">📌 供稿：信息网络管理中心 | 技术应用联系人：刘盼 15811365997</div>
+                <div class="media-placeholder">
+                    📷 此处可插入"记者跑两会"H5 界面截图或"AI 画布"工具演示视频
+                </div>
             </div>
             
             <div class="item">
                 <div class="item-title">2. 推动 AIGC 赋能重大选题精品内容创作</div>
                 <div class="item-content">
-                    我台聚焦节目内容与 AIGC 技术融合创新。围绕《书山有路—习近平总书记的书单》第三季，通过 AIGC 填补视听空间，将书中描绘的内容可视化。结合《熊猫奇遇记》第二季，探索 AI 对 IP 的全链条赋能，通过即梦、海螺模型生成八只熊猫 IP 形象，利用 Deepseek 和 Suno 作词谱曲，制作八首推介各地文旅的片尾 MV，创制熊猫手势舞中英文短视频。
+                    我台聚焦节目内容与 AIGC 技术融合创新。围绕《书山有路—习近平总书记的书单》第三季，通过 AIGC 填补视听空间，将书中描绘的内容可视化。结合《熊猫奇遇记》第二季，探索 AI 对 IP 的全链条赋能，通过即梦、海螺模型生成八只熊猫 IP 形象，利用 Deepseek 和 Suno 作词谱曲，制作八首推介各地文旅的片尾 MV。
                 </div>
                 <div class="source">📌 供稿：电视节目制作中心 | 技术应用联系人：王冰 18601207783</div>
+                <div class="media-placeholder">
+                    🎬 此处可插入《书山有路》AIGC 片段或《熊猫奇遇记》MV 视频
+                </div>
             </div>
         </section>
         
@@ -331,7 +340,7 @@
         <footer>
             <p>广播电视和网络视听科技发展与创新应用周报</p>
             <p>2026 年第 2 期 | 总第 2 期</p>
-            <p style="margin-top: 20px; opacity: 0.6;">📧 欢迎供稿与交流</p>
+            <p style="margin-top: 15px; color: #aaa;">📧 欢迎供稿与交流</p>
         </footer>
     </div>
     
@@ -348,22 +357,6 @@
                     });
                 }
             });
-        });
-        
-        // 滚动动画
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-        
-        document.querySelectorAll('.section').forEach(section => {
-            observer.observe(section);
         });
     </script>
 </body>
